@@ -9,8 +9,10 @@ istration card), the maintenance crew (responsible for collecting/replacing brok
 bicycles), etc.
 
 **The project consists of two parts:**
+
 Part 1: myVelib core: design and development of the core Java infrastructure for the myVelib
-system (based on requirements given in Section 2)..
+system (based on requirements given in Section 2).
+
 Part 2: myVelib user-interface: design and development of a user-interface for the myVelib
 system (see Section 3).
 
@@ -19,6 +21,7 @@ _**To test this implementation, please see the 7 and 8 parts of the report (name
 **Here were the requirements and bonuses for the project**
 
 **Components of the myVelib system**
+
 • Docking station: a docking station is where bicycles can be rented and dropped. It
 consists of a number of parking slots where bikes are stored and of a terminal which
 users can interact with in order for renting bicycles. Parking slots can be be either
@@ -49,6 +52,7 @@ be virtualised on the User’s mobile phone)
 
 
 **Costs for using bicycles**
+
 When a ride is ended the system will (automatically) compute the corresponding cost of
 the ride based on the ride duration (in minutes), the kind of bike, the type of card a user
 has and also on whether the bike has been parked in a docking station or not (e.g. on a
@@ -82,6 +86,7 @@ the price is computed by applying a 10% malus to the pricing computed when the
 bike is taken-from and returned-to a docking station.
 
 **Rides planning**
+
 The myVelib system must be equipped with a functionality that helps users to plan a ride
 from a starting location to a destination location. Given the starting and destination GPS
 coordinates the ride planning functionality will identify the “optimal” start and end stations
@@ -97,6 +102,7 @@ available for renting
 
 Requirement: it should be possible to extend the myVelib by adding more riding policies
 functionalities.
+
 Bonus points: if you apply an open-close design for realising the ride planning functional-
 ity you will gain some bonus points. Furthermore if you equip your design with any of the
 optional ride-planning policies described below you will also gain some additional points.
@@ -131,6 +137,7 @@ of free parking slots than sd it should be selected as the destination station i
 of sd.
 
 **Rental and returning of a bicycle**
+
 To rent a bicycle a user must get to one station, identify themselves (either through a velib-card
 or through a credit-card) and pick up one of the available bikes. A user can only rent at
 most one bicycle (i.e. if she has a bicycle and has not yet returned it, she cannot rent a
@@ -139,6 +146,7 @@ of some station. When the bike is returned the cost for the ride is computed and
 automatically charged (if a charge applies).
 
 **Computing statistics and sorting of stations**
+
 The myVelib system should support the following functionalities for computing relevant
 statistics:
 
