@@ -1,5 +1,5 @@
-This project was realized as part of a course on project oriented programming in second year of engineering school. 
-
+**This project was realized as part of a course on project oriented programming in second year of engineering school. 
+**
 This project consists on developping a Java framework, called myVelib for managing bike sharing. 
 It is a bike sharing system (like, for example, Velib in Paris) allows inhabitants to rent bicycles
 and cycle around a metropolitan area. Such a system consists of several interacting parts
@@ -14,7 +14,10 @@ system (based on requirements given in Section 2)..
 Part 2: myVelib user-interface: design and development of a user-interface for the myVelib
 system (see Section 3).
 
-Here were the requirements and bonuses for the project 
+_**To test this implementation, please see the 7 and 8 parts of the report (named "Tests" and "How to test" respectively)**_
+
+**Here were the requirements and bonuses for the project 
+**
 Components of the myVelib system
 • Docking station: a docking station is where bicycles can be rented and dropped. It
 consists of a number of parking slots where bikes are stored and of a terminal which
@@ -97,3 +100,74 @@ functionalities.
 Bonus points: if you apply an open-close design for realising the ride planning functional-
 ity you will gain some bonus points. Furthermore if you equip your design with any of the
 optional ride-planning policies described below you will also gain some additional points.
+
+Optional ride-planning policies: the following ride-planning policies are to be consid-
+ered as optional (you can, if you want, let your myVelib design support them however they
+are not mandatory).
+
+• avoid “plus” stations: like minimal walking distance but return station cannot be
+a “plus” station
+
+• prefer “plus” stations: with this policy the return station should be a “plus”
+station (given a “plus” station no further away than 10% of the distance of the
+closest station to the destination location exists). If no such a “plus” station exists
+then this policy behaves normally (as a minimal walking distance).
+
+• prefer a bike parked in the street: like minimal walking distance but the bike
+to rent is chosen amongst those that are not parked into a docking station.
+
+• preservation of uniformity of bicycles distribution amongst stations: with
+this policy the choice of the source and destination station is affected by the number
+of available bikes (at source station) and free slots (at destination). Specifically, let
+s0 be the closest station to the starting location with at least one available bike of the
+wanted kind, and sd be the station closest to the destination location with at least
+one free parking slot. Then if a station s′0 whose distance from the starting location
+is no more than 105% the distance of s0 from the start location has a larger number
+of bikes (of the wanted kind) than those available at s0 it should be selected in place
+of s0. Similarly if a station s′
+d (whose distance from the destination location is at
+most 105% of the distance of sd from the destination location) has a larger number
+of free parking slots than sd it should be selected as the destination station in place
+of sd.
+
+Rental and returning of a bicycle
+To rent a bicycle a user must get to one station, identify themselves (either through a velib-card
+or through a credit-card) and pick up one of the available bikes. A user can only rent at
+most one bicycle (i.e. if she has a bicycle and has not yet returned it, she cannot rent a
+second one). To return a bicycle a user must park it to a free (and on-duty) parking bay
+of some station. When the bike is returned the cost for the ride is computed and user is
+automatically charged (if a charge applies).
+
+Computing statistics and sorting of stations
+The myVelib system should support the following functionalities for computing relevant
+statistics:
+
+• User balance: should allow to retrieve, for any user of the myVelib system, the
+number of rides, the total time spent on a bike, the total amount of charges for all
+rides performed by a user, as well as the time-credit earned by a user
+
+• Station balance: should allow to retrieve the total number of rents operation, as
+well as of return operations performed on the station.
+
+Furthermore myVelib should support different policies for sorting stations including
+those based on the following criteria:
+
+• most used station: stations are sorted w.r.t. the total number of renting + drop-
+ping operations
+
+• least occupied station: stations are sorted w.r.t. the difference between the num-
+ber of dropping and renting operations. Such a difference is an indicator of the level
+of occupation of a station. For example a station for which such difference is large
+will have (on average) many free parking slots, whereas a station for which such dif-
+ference is small (or even negative) will have (on average) few free parking slots. Such
+a statistics allows for figure out policy to increase the use of less occupied stations (for
+example by electing the least occupied stations to the “plus” category so to attract
+users to drop bikes).
+
+Remark (an OPEN-CLOSE solution). Your design should match as much as possible
+the open-close principle. Using of design patterns should be properly documented in the
+project report explicitly describing to to fulfil which requirement of the myVelib system a
+design pattern has been applied.
+
+**All complementary information can be found in the report. 
+This project was graded 18.5/20**__
