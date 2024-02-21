@@ -1,4 +1,4 @@
-**This project was realized as part of a course on project oriented programming in second year of engineering school. **
+**This project was realized as part of a course on project oriented programming in second year of engineering school.**
 
 This project consists on developping a Java framework, called myVelib for managing bike sharing. 
 It is a bike sharing system (like, for example, Velib in Paris) allows inhabitants to rent bicycles
@@ -16,7 +16,7 @@ system (see Section 3).
 
 _**To test this implementation, please see the 7 and 8 parts of the report (named "Tests" and "How to test" respectively)**_
 
-**Here were the requirements and bonuses for the project **
+**Here were the requirements and bonuses for the project**
 
 Components of the myVelib system
 • Docking station: a docking station is where bicycles can be rented and dropped. It
