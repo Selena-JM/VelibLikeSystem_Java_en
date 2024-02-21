@@ -178,4 +178,4 @@ project report explicitly describing to to fulfil which requirement of the myVel
 design pattern has been applied.
 
 **All complementary information can be found in the report. 
-This project was graded 18.5/20**__
+This project was graded 18.5/20**_
