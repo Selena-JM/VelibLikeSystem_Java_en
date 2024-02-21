@@ -1,6 +1,6 @@
 ## Description
 
-**This project was realized as part of a course on project oriented programming in second year of engineering school.**
+**This project was realized as part of a course on project oriented programming in fourth year of engineering school.**
 
 This project consists on developping a Java framework, called myVelib for managing bike sharing. 
 It is a bike sharing system (like, for example, Velib in Paris) allows inhabitants to rent bicycles
