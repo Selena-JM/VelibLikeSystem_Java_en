@@ -1,0 +1,5 @@
+adduser patoche none myvelib
+User added : User : (ID = 1, name = patoche, credit card ID = 1, type of subscribing = no card)
+
+Enter next command or stop
+stop

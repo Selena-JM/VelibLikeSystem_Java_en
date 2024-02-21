@@ -1,0 +1,13 @@
+tripplanningclui myvelib 1,2 3,7 electrical station_only either
+Start station : 1, end station : 1
+
+Enter next command or stop
+tripplanningclui myvelib 1,2 3,7 electrical either prefer_plus_stations
+Free bike coordinates : Coordinates [x=1.3641662287960696, y=1.90850055577625], end station : 1
+
+Enter next command or stop
+tripplanningclui myvelib 1,2 3,7 electrical non_parked_bike_only prefer_plus_stations
+Free bike coordinates : Coordinates [x=1.3641662287960696, y=1.90850055577625], end station : 1
+
+Enter next command or stop
+stop

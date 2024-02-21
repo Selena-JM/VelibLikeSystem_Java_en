@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"balance_update_from_log"},{"l":"clui"},{"l":"junit_tests"},{"l":"log_update_from_parking_slots"},{"l":"main"},{"l":"planning"},{"l":"pricing"},{"l":"renting"},{"l":"sorting"},{"l":"terminals"},{"l":"test"}];updateSearchResults();

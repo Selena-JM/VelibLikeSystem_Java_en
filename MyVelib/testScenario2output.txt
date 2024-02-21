@@ -1,0 +1,275 @@
+setup myvelib 10 10 4 70 10
+Name of the MyVelib created : myvelib, number of users : 10, number of stations : 10, number of parking slots per station : 10, number of bikes : 70, size of the square : 4
+
+Enter next command or stop
+offline myvelib 17
+Station n° : 17 put offline
+
+Enter next command or stop
+online myvelib 14
+Station n° : 14 put online
+
+Enter next command or stop
+online myvelib 19
+Station n° : 19 put online
+
+Enter next command or stop
+online myvelib 18
+Station n° : 18 put online
+
+Enter next command or stop
+online myvelib 18
+Station n° : 18 put online
+
+Enter next command or stop
+plus myvelib 18
+Station n° : 18 set as plus
+
+Enter next command or stop
+rentbike 1 14
+Bike n° : 93 taken from slot n° : 144 in station n° : 14
+New ongoing trip : OngoingTrip : (start coordinates = Coordinates : [x=2.6416304581177106, y=0.2370594034008402], start time=10:10:40.000170900, user id = 1, bike id = 93, type of bike = mechanical)
+
+Enter next command or stop
+rentbike 2 19
+Bike n° : 133 taken from slot n° : 199 in station n° : 19
+New ongoing trip : OngoingTrip : (start coordinates = Coordinates : [x=3.750142337313873, y=1.7348523133626021], start time=10:10:40.003581, user id = 2, bike id = 133, type of bike = mechanical)
+
+Enter next command or stop
+rentbike 3 17
+Station n° : 17 offline, can't rent
+
+Enter next command or stop
+returnbike 1 18 40
+Trip : (start coordinates = Coordinates : [x=2.6416304581177106, y=0.2370594034008402], end coordinates = Coordinates : [x=1.4894127264457593, y=2.5576222951866745], user id = 1, bicycle id = 93, type of bicycle = mechanical, duration = 40)
+Price from station to station : 0.0
+Time credit : 5.0
+Bike returned to station n° : 18 in parking slot n° : 190
+User balance : (user id = 1, type of subscribing = Vlibre, number of rides = 1, total time on bike = 40, total amount charged = 0.0, time credit = 5.0)
+
+Enter next command or stop
+returnbike 2 16 130
+Trip : (start coordinates = Coordinates : [x=3.750142337313873, y=1.7348523133626021], end coordinates = Coordinates : [x=2.206152271837856, y=2.896876220594696], user id = 2, bicycle id = 133, type of bicycle = mechanical, duration = 130)
+Price from station to station : 2.0
+Time credit : 5.0
+Bike returned to station n° : 16 in parking slot n° : 166
+User balance : (user id = 2, type of subscribing = Vmax, number of rides = 1, total time on bike = 130, total amount charged = 2.0, time credit = 5.0)
+
+Enter next command or stop
+returnbike 3 19 30
+No bike rented by this user
+
+Enter next command or stop
+rentbike 1 14
+Bike n° : 94 taken from slot n° : 145 in station n° : 14
+New ongoing trip : OngoingTrip : (start coordinates = Coordinates : [x=2.6416304581177106, y=0.2370594034008402], start time=10:10:40.008731400, user id = 1, bike id = 94, type of bike = electrical)
+
+Enter next command or stop
+returnbike 1 6.89,8.95 60
+Bike returned to coordinates : Coordinates : [x=6.89, y=8.95]
+Price to free parking : 2.2
+Time credit : 0.0
+User balance : (user id = 1, type of subscribing = Vlibre, number of rides = 2, total time on bike = 100, total amount charged = 2.2, time credit = 0.0)
+
+Enter next command or stop
+displaystation myvelib 14
+Station balance : (station id = 14, total rents = 2, total returns = 0)
+
+Enter next command or stop
+displaystation myvelib 19
+Station balance : (station id = 19, total rents = 1, total returns = 0)
+
+Enter next command or stop
+displaystation myvelib 18
+Station balance : (station id = 18, total rents = 0, total returns = 1)
+
+Enter next command or stop
+displayuser myvelib 1
+User balance : (user id = 1, type of subscribing = Vlibre, number of rides = 2, total time on bike = 100, total amount charged = 2.2, time credit = 0.0)
+
+Enter next command or stop
+displayuser myvelib 2
+User balance : (user id = 2, type of subscribing = Vmax, number of rides = 1, total time on bike = 130, total amount charged = 2.0, time credit = 5.0)
+
+Enter next command or stop
+sortstation myvelib least_occupied
+[Station balance : (station id = 14, total rents = 2, total returns = 0), Station balance : (station id = 19, total rents = 1, total returns = 0), Station balance : (station id = 11, total rents = 0, total returns = 0), Station balance : (station id = 12, total rents = 0, total returns = 0), Station balance : (station id = 13, total rents = 0, total returns = 0), Station balance : (station id = 15, total rents = 0, total returns = 0), Station balance : (station id = 17, total rents = 0, total returns = 0), Station balance : (station id = 20, total rents = 0, total returns = 0), Station balance : (station id = 16, total rents = 0, total returns = 1), Station balance : (station id = 18, total rents = 0, total returns = 1)]
+
+Enter next command or stop
+sortstation myvelib most_used
+[Station balance : (station id = 11, total rents = 0, total returns = 0), Station balance : (station id = 12, total rents = 0, total returns = 0), Station balance : (station id = 13, total rents = 0, total returns = 0), Station balance : (station id = 15, total rents = 0, total returns = 0), Station balance : (station id = 17, total rents = 0, total returns = 0), Station balance : (station id = 20, total rents = 0, total returns = 0), Station balance : (station id = 16, total rents = 0, total returns = 1), Station balance : (station id = 18, total rents = 0, total returns = 1), Station balance : (station id = 19, total rents = 1, total returns = 0), Station balance : (station id = 14, total rents = 2, total returns = 0)]
+
+Enter next command or stop
+display myvelib
+MyVelib [Number stations : 10, number of users : 10, number of bikes : 70]
+
+Docking station : (ID = 11, number of parking slots =11, coordinates = Coordinates : [x=1.9851803048192194, y=2.047177041542341], state = offline, type = standard)
+ParkingSlots : (ID = 111, status = electrical, station = 11, bike id = 71)
+ParkingSlots : (ID = 112, status = mechanical, station = 11, bike id = 72)
+ParkingSlots : (ID = 113, status = free, station = 11, bike id = 0)
+ParkingSlots : (ID = 114, status = mechanical, station = 11, bike id = 73)
+ParkingSlots : (ID = 115, status = electrical, station = 11, bike id = 74)
+ParkingSlots : (ID = 116, status = electrical, station = 11, bike id = 75)
+ParkingSlots : (ID = 117, status = electrical, station = 11, bike id = 76)
+ParkingSlots : (ID = 118, status = electrical, station = 11, bike id = 77)
+ParkingSlots : (ID = 119, status = mechanical, station = 11, bike id = 78)
+ParkingSlots : (ID = 120, status = mechanical, station = 11, bike id = 79)
+ParkingSlots : (ID = 121, status = free, station = 11, bike id = 0)
+
+Docking station : (ID = 12, number of parking slots =11, coordinates = Coordinates : [x=2.221047552883066, y=2.156088754277151], state = offline, type = standard)
+ParkingSlots : (ID = 122, status = free, station = 12, bike id = 0)
+ParkingSlots : (ID = 123, status = electrical, station = 12, bike id = 80)
+ParkingSlots : (ID = 124, status = mechanical, station = 12, bike id = 81)
+ParkingSlots : (ID = 125, status = mechanical, station = 12, bike id = 82)
+ParkingSlots : (ID = 126, status = mechanical, station = 12, bike id = 83)
+ParkingSlots : (ID = 127, status = mechanical, station = 12, bike id = 84)
+ParkingSlots : (ID = 128, status = free, station = 12, bike id = 0)
+ParkingSlots : (ID = 129, status = free, station = 12, bike id = 0)
+ParkingSlots : (ID = 130, status = mechanical, station = 12, bike id = 85)
+ParkingSlots : (ID = 131, status = electrical, station = 12, bike id = 86)
+ParkingSlots : (ID = 132, status = free, station = 12, bike id = 0)
+
+Docking station : (ID = 13, number of parking slots =11, coordinates = Coordinates : [x=0.3843346597428434, y=2.1427400865238186], state = offline, type = plus)
+ParkingSlots : (ID = 133, status = free, station = 13, bike id = 0)
+ParkingSlots : (ID = 134, status = mechanical, station = 13, bike id = 87)
+ParkingSlots : (ID = 135, status = free, station = 13, bike id = 0)
+ParkingSlots : (ID = 136, status = free, station = 13, bike id = 0)
+ParkingSlots : (ID = 137, status = mechanical, station = 13, bike id = 88)
+ParkingSlots : (ID = 138, status = electrical, station = 13, bike id = 89)
+ParkingSlots : (ID = 139, status = free, station = 13, bike id = 0)
+ParkingSlots : (ID = 140, status = mechanical, station = 13, bike id = 90)
+ParkingSlots : (ID = 141, status = mechanical, station = 13, bike id = 91)
+ParkingSlots : (ID = 142, status = mechanical, station = 13, bike id = 92)
+ParkingSlots : (ID = 143, status = free, station = 13, bike id = 0)
+
+Docking station : (ID = 14, number of parking slots =11, coordinates = Coordinates : [x=2.6416304581177106, y=0.2370594034008402], state = online, type = plus)
+ParkingSlots : (ID = 144, status = free, station = 14, bike id = 0)
+ParkingSlots : (ID = 145, status = free, station = 14, bike id = 0)
+ParkingSlots : (ID = 146, status = free, station = 14, bike id = 0)
+ParkingSlots : (ID = 147, status = mechanical, station = 14, bike id = 95)
+ParkingSlots : (ID = 148, status = electrical, station = 14, bike id = 96)
+ParkingSlots : (ID = 149, status = mechanical, station = 14, bike id = 97)
+ParkingSlots : (ID = 150, status = electrical, station = 14, bike id = 98)
+ParkingSlots : (ID = 151, status = mechanical, station = 14, bike id = 99)
+ParkingSlots : (ID = 152, status = free, station = 14, bike id = 0)
+ParkingSlots : (ID = 153, status = mechanical, station = 14, bike id = 100)
+ParkingSlots : (ID = 154, status = mechanical, station = 14, bike id = 101)
+
+Docking station : (ID = 15, number of parking slots =11, coordinates = Coordinates : [x=0.06750315359199721, y=2.677271029467546], state = offline, type = plus)
+ParkingSlots : (ID = 155, status = free, station = 15, bike id = 0)
+ParkingSlots : (ID = 156, status = free, station = 15, bike id = 0)
+ParkingSlots : (ID = 157, status = electrical, station = 15, bike id = 102)
+ParkingSlots : (ID = 158, status = mechanical, station = 15, bike id = 103)
+ParkingSlots : (ID = 159, status = free, station = 15, bike id = 0)
+ParkingSlots : (ID = 160, status = free, station = 15, bike id = 0)
+ParkingSlots : (ID = 161, status = mechanical, station = 15, bike id = 104)
+ParkingSlots : (ID = 162, status = electrical, station = 15, bike id = 105)
+ParkingSlots : (ID = 163, status = mechanical, station = 15, bike id = 106)
+ParkingSlots : (ID = 164, status = mechanical, station = 15, bike id = 107)
+ParkingSlots : (ID = 165, status = free, station = 15, bike id = 0)
+
+Docking station : (ID = 16, number of parking slots =11, coordinates = Coordinates : [x=2.206152271837856, y=2.896876220594696], state = service, type = plus)
+ParkingSlots : (ID = 166, status = mechanical, station = 16, bike id = 133)
+ParkingSlots : (ID = 167, status = electrical, station = 16, bike id = 108)
+ParkingSlots : (ID = 168, status = free, station = 16, bike id = 0)
+ParkingSlots : (ID = 169, status = free, station = 16, bike id = 0)
+ParkingSlots : (ID = 170, status = mechanical, station = 16, bike id = 109)
+ParkingSlots : (ID = 171, status = electrical, station = 16, bike id = 110)
+ParkingSlots : (ID = 172, status = electrical, station = 16, bike id = 111)
+ParkingSlots : (ID = 173, status = mechanical, station = 16, bike id = 112)
+ParkingSlots : (ID = 174, status = mechanical, station = 16, bike id = 113)
+ParkingSlots : (ID = 175, status = mechanical, station = 16, bike id = 114)
+ParkingSlots : (ID = 176, status = mechanical, station = 16, bike id = 115)
+
+Docking station : (ID = 17, number of parking slots =11, coordinates = Coordinates : [x=0.4984053516314124, y=0.17206427474076813], state = offline, type = standard)
+ParkingSlots : (ID = 177, status = mechanical, station = 17, bike id = 116)
+ParkingSlots : (ID = 178, status = mechanical, station = 17, bike id = 117)
+ParkingSlots : (ID = 179, status = mechanical, station = 17, bike id = 118)
+ParkingSlots : (ID = 180, status = electrical, station = 17, bike id = 119)
+ParkingSlots : (ID = 181, status = electrical, station = 17, bike id = 120)
+ParkingSlots : (ID = 182, status = mechanical, station = 17, bike id = 121)
+ParkingSlots : (ID = 183, status = mechanical, station = 17, bike id = 122)
+ParkingSlots : (ID = 184, status = free, station = 17, bike id = 0)
+ParkingSlots : (ID = 185, status = mechanical, station = 17, bike id = 123)
+ParkingSlots : (ID = 186, status = mechanical, station = 17, bike id = 124)
+ParkingSlots : (ID = 187, status = electrical, station = 17, bike id = 125)
+
+Docking station : (ID = 18, number of parking slots =11, coordinates = Coordinates : [x=1.4894127264457593, y=2.5576222951866745], state = online, type = plus)
+ParkingSlots : (ID = 188, status = mechanical, station = 18, bike id = 126)
+ParkingSlots : (ID = 189, status = mechanical, station = 18, bike id = 127)
+ParkingSlots : (ID = 190, status = mechanical, station = 18, bike id = 93)
+ParkingSlots : (ID = 191, status = mechanical, station = 18, bike id = 128)
+ParkingSlots : (ID = 192, status = free, station = 18, bike id = 0)
+ParkingSlots : (ID = 193, status = electrical, station = 18, bike id = 129)
+ParkingSlots : (ID = 194, status = mechanical, station = 18, bike id = 130)
+ParkingSlots : (ID = 195, status = free, station = 18, bike id = 0)
+ParkingSlots : (ID = 196, status = free, station = 18, bike id = 0)
+ParkingSlots : (ID = 197, status = mechanical, station = 18, bike id = 131)
+ParkingSlots : (ID = 198, status = mechanical, station = 18, bike id = 132)
+
+Docking station : (ID = 19, number of parking slots =11, coordinates = Coordinates : [x=3.750142337313873, y=1.7348523133626021], state = online, type = standard)
+ParkingSlots : (ID = 199, status = free, station = 19, bike id = 0)
+ParkingSlots : (ID = 200, status = electrical, station = 19, bike id = 134)
+ParkingSlots : (ID = 201, status = mechanical, station = 19, bike id = 135)
+ParkingSlots : (ID = 202, status = mechanical, station = 19, bike id = 136)
+ParkingSlots : (ID = 203, status = mechanical, station = 19, bike id = 137)
+ParkingSlots : (ID = 204, status = electrical, station = 19, bike id = 138)
+ParkingSlots : (ID = 205, status = mechanical, station = 19, bike id = 139)
+ParkingSlots : (ID = 206, status = free, station = 19, bike id = 0)
+ParkingSlots : (ID = 207, status = electrical, station = 19, bike id = 140)
+ParkingSlots : (ID = 208, status = free, station = 19, bike id = 0)
+ParkingSlots : (ID = 209, status = free, station = 19, bike id = 0)
+
+Docking station : (ID = 20, number of parking slots =11, coordinates = Coordinates : [x=1.763821868435421, y=0.928210910091102], state = offline, type = standard)
+ParkingSlots : (ID = 210, status = free, station = 20, bike id = 0)
+ParkingSlots : (ID = 211, status = free, station = 20, bike id = 0)
+ParkingSlots : (ID = 212, status = mechanical, station = 20, bike id = 0)
+ParkingSlots : (ID = 213, status = free, station = 20, bike id = 0)
+ParkingSlots : (ID = 214, status = mechanical, station = 20, bike id = 0)
+ParkingSlots : (ID = 215, status = mechanical, station = 20, bike id = 0)
+ParkingSlots : (ID = 216, status = mechanical, station = 20, bike id = 0)
+ParkingSlots : (ID = 217, status = free, station = 20, bike id = 0)
+ParkingSlots : (ID = 218, status = mechanical, station = 20, bike id = 0)
+ParkingSlots : (ID = 219, status = free, station = 20, bike id = 0)
+ParkingSlots : (ID = 220, status = free, station = 20, bike id = 0)
+User : (ID = 1, name = Johnny, credit card ID = 1, type of subscribing = Vlibre)
+User : (ID = 2, name = Genevieve, credit card ID = 2, type of subscribing = Vmax)
+User : (ID = 3, name = Johnny, credit card ID = 3, type of subscribing = no card)
+User : (ID = 4, name = Johnny, credit card ID = 4, type of subscribing = Vmax)
+User : (ID = 5, name = Gertrude, credit card ID = 5, type of subscribing = Vmax)
+User : (ID = 6, name = Sandra, credit card ID = 6, type of subscribing = Vmax)
+User : (ID = 7, name = Patrick, credit card ID = 7, type of subscribing = Vmax)
+User : (ID = 8, name = Sofia, credit card ID = 8, type of subscribing = no card)
+User : (ID = 9, name = Mike, credit card ID = 9, type of subscribing = Vlibre)
+User : (ID = 10, name = Gertrude, credit card ID = 10, type of subscribing = Vmax)
+
+Enter next command or stop
+help
+
+To enter a command, write the name of the command and the arguments without the '<' and '>'
+
+All the mandatory commands possible :
+setup <velibnetworkName>
+setup <name> <nstations> <nslots> <s> <nbikes>
+addUser <userName> <cardType> <velibnetworkName>
+offline <velibnetworkName> <stationID>
+online <velibnetworkName> <stationID>
+rentBike <userID> <stationID>
+rentBike <userID> <GPS_Position>
+returnBike <userID> <stationID> <duration>
+returnBike <userID> <GPS_Position> <duration>
+displayStation<velibnetworkName> <stationID>
+displayUser<velibnetworkName> <userID>
+sortStation<velibnetworkName> <sortpolicy>, sort_policy = least_occupied or most_used
+display <velibnetworkName>
+To test a scenario : runtest testScenarioN.txt
+
+Additional commands :
+To enter the commands manually : enter_manually
+To set up a myvelib with users : setup <name> <nstations> <nslots> <s> <nbikes> <nusers>
+To set a station as plus : plus <velibnetworkName> <stationID>
+To set a station as standard : standard <velibnetworkName> <stationID>
+To plan a trip : tripplanningclui <velibnetworkName> <startcoordinates> <endcoordinates> <typeofbike> <starttype> <strategyforpluststations>. Enter coordinates with a coma (example : 3.65,8.76), the type of bike is 'electrical' or 'mechanical', starttype is station_only, non_parked_bike_only or either and the strategyforplusstations is avoid_plus_stations, prefer_plus_stations or either
+
+Enter next command or stop
+stop

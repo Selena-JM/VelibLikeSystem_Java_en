@@ -1,0 +1,30 @@
+adduser Yvette no myvelib
+adduser Yvette none velib
+offline velib 7
+offline myvelib 42
+online velib 4
+online myvelib 99
+plus velib 1
+plus myvelib 38
+standard velib 1
+standard myvelib 38
+rentbike 1 4
+adduser Patrick none myvelib
+rentbike 1 6
+rentbike 1 4
+returnbike 1 89 40
+rentbike 2 5.90,8.65
+returnbike 1 1 90
+displaystation velib 4
+displaystation myvelib 99
+displaystation velib 8
+displayuser myvelib 1
+displayuser myvelib 68
+displayuser velib 1
+sortstation myvelib least
+sortstation myvelib most
+sortstation velib least_occupied
+sortstation velib most_occupied
+display myvelib
+help
+stop

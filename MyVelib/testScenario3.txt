@@ -1,0 +1,4 @@
+tripplanningclui myvelib 1,2 3,7 electrical station_only either
+tripplanningclui myvelib 1,2 3,7 electrical either prefer_plus_stations
+tripplanningclui myvelib 1,2 3,7 electrical non_parked_bike_only prefer_plus_stations
+stop

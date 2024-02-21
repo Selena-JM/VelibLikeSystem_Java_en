@@ -1,0 +1,27 @@
+setup myvelib 10 10 4 70 10
+offline myvelib 17
+online myvelib 14
+online myvelib 19
+online myvelib 17
+online myvelib 18
+online myvelib 16
+online myvelib 19
+plus myvelib 18
+rentbike 1 14
+rentbike 2 19
+rentbike 3 17
+returnbike 1 18 40
+returnbike 2 16 130
+returnbike 3 19 30
+rentbike 1 14
+returnbike 1 6.89,8.95 60
+displaystation myvelib 14
+displaystation myvelib 19
+displaystation myvelib 18
+displayuser myvelib 1
+displayuser myvelib 2
+sortstation myvelib least_occupied
+sortstation myvelib most_used
+display myvelib
+help
+stop
